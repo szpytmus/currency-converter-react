@@ -11,6 +11,7 @@ body {
     background-color: #eee;
     font-size: 16px;
     padding: 10px;
+    background-image: url(./currency-background.jpg);
 }
 
 .container{
