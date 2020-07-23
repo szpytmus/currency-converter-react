@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Container from './Container';
 import Header from './Header'
 import Form from './Form'
+import Results from './Results'
+
 
 function App() {
 
@@ -120,10 +122,12 @@ function App() {
 
       <Form
         calculateCurrency={calculateCurrency}
-        convertedAmount={convertedAmount}
       />
+  
+    <Results
+    convertedAmount={convertedAmount}
+    />
     
-
     </Container>
 
   )

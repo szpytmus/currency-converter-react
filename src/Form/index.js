@@ -51,15 +51,7 @@ const Form = ({ calculateCurrency, convertedAmount }) => {
             >
                 Convert!
             </button>
-            <p 
-            className="form__paragraph"
-            >
-                <span 
-                className="form__result"
-                hidden={convertedAmount <=0}
-                >Converted currency: {convertedAmount}
-                </span>
-            </p>
+            
         </form>
     )
 };
