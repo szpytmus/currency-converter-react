@@ -12,18 +12,13 @@ const Form = ({ calculateCurrency, convertedAmount }) => {
     const onFormSubmit = (event) => {
         event.preventDefault();
         calculateCurrency(firstCurrency, secondCurrency, moneyAmount)
-        console.log(`Pierwsza waluta: ${firstCurrency}`)
-        console.log(`Druga waluta: ${secondCurrency}`)
-        console.log(`Chcesz zamienić: ${moneyAmount}`)
-        
-
     }
 
     return (
         <form className="form" onSubmit={onFormSubmit}>
             <p className="form__paragraph">
                 <label className="form__label">Calculate from:</label>
-                <select value={firstCurrency} onChange={onSelectChangeFirst}>
+                <select className="form__select" value={firstCurrency} onChange={onSelectChangeFirst}>
                     <option />
                     <option>PLN</option>
                     <option>GBP</option>
@@ -33,7 +28,7 @@ const Form = ({ calculateCurrency, convertedAmount }) => {
             </p>
             <p className="form__paragraph">
                 <label className="form__label">Calculate to:</label>
-                <select value={secondCurrency} onChange={onSelectChangeSecond}>
+                <select className="form__select" value={secondCurrency} onChange={onSelectChangeSecond}>
                     <option />
                     <option>PLN</option>
                     <option>GBP</option>
@@ -51,6 +46,7 @@ const Form = ({ calculateCurrency, convertedAmount }) => {
                 />
             </p>
             <button
+                className="form__button"
                 onClick={() => calculateCurrency(firstCurrency, secondCurrency, moneyAmount)}
             >
                 Convert!

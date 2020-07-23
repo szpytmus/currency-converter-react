@@ -6,7 +6,6 @@
 }
 
 .form {
-    border: 2px solid  rgb(62, 172, 62);
     background-color:rgb(197, 196, 196);
     border-radius: 5px;
     margin: auto;
@@ -14,24 +13,36 @@
     max-width: 800px;
 }
 
-.form__legend{
-    background-color: rgb(62, 172, 62);
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.form__value:required{
-border-color: #777;
-}
-
-
-.form__paragraph--smaller{
-    font-size:12px;
-    margin-top:20px;
-}
 
 .form__select{
-    padding: 10px;
+    padding: 5px;
     color: rgb(49, 138, 49);
+    border: 2px solid rgb(49, 138, 49);
+}
+
+.form__input{
+    padding: 5px;
+    color: rgb(49, 138, 49);
+    border: 2px solid rgb(49, 138, 49);
+}
+
+.form__button {
+    background: rgb(49, 138, 49);
+    color:white;
+    border:none;
+    padding:10px;
+    margin: 20px 0 0 20px;
+    transition: color 0.3s;
+    
+}
+
+
+.form__button:hover {
+    height: 50px;
+    font-size: 20px;
+    background-color: hsl(120, 48%,67%);
+    color: white;
+    border: none;
+    padding: 15px;
+    transition: 1s;
 }
