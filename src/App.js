@@ -125,7 +125,7 @@ function App() {
       />
   
     <Results
-    convertedAmount={convertedAmount}
+    convertedAmount={convertedAmount.toFixed(2)}
     />
     
     </Container>
