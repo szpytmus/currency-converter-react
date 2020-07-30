@@ -3,6 +3,7 @@ import Container from './Container';
 import Header from './Header'
 import Form from './Form'
 import Results from './Results'
+import Timer from './Timer'
 
 
 function App() {
@@ -118,7 +119,9 @@ function App() {
  return  (
 
     <Container>
+      <Timer></Timer>
       <Header title="Currency Calculator"></Header>
+      
 
       <Form
         calculateCurrency={calculateCurrency}
