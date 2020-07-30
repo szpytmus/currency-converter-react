@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/currency-converter-react/static/css/main.c60d457c.chunk.css",
-    "main.js": "/currency-converter-react/static/js/main.8be212a1.chunk.js",
-    "main.js.map": "/currency-converter-react/static/js/main.8be212a1.chunk.js.map",
+    "main.css": "/currency-converter-react/static/css/main.669f3594.chunk.css",
+    "main.js": "/currency-converter-react/static/js/main.9ebcb159.chunk.js",
+    "main.js.map": "/currency-converter-react/static/js/main.9ebcb159.chunk.js.map",
     "runtime-main.js": "/currency-converter-react/static/js/runtime-main.2415008a.js",
     "runtime-main.js.map": "/currency-converter-react/static/js/runtime-main.2415008a.js.map",
     "static/js/2.59662f4b.chunk.js": "/currency-converter-react/static/js/2.59662f4b.chunk.js",
     "static/js/2.59662f4b.chunk.js.map": "/currency-converter-react/static/js/2.59662f4b.chunk.js.map",
     "index.html": "/currency-converter-react/index.html",
-    "precache-manifest.9bf1712b1592e8d8e786108a93752f6a.js": "/currency-converter-react/precache-manifest.9bf1712b1592e8d8e786108a93752f6a.js",
+    "precache-manifest.182cbd81089d42da1f76fbcc348d546e.js": "/currency-converter-react/precache-manifest.182cbd81089d42da1f76fbcc348d546e.js",
     "service-worker.js": "/currency-converter-react/service-worker.js",
-    "static/css/main.c60d457c.chunk.css.map": "/currency-converter-react/static/css/main.c60d457c.chunk.css.map",
+    "static/css/main.669f3594.chunk.css.map": "/currency-converter-react/static/css/main.669f3594.chunk.css.map",
     "static/js/2.59662f4b.chunk.js.LICENSE.txt": "/currency-converter-react/static/js/2.59662f4b.chunk.js.LICENSE.txt",
     "static/media/style.css": "/currency-converter-react/static/media/currency-background.148b573e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2415008a.js",
     "static/js/2.59662f4b.chunk.js",
-    "static/css/main.c60d457c.chunk.css",
-    "static/js/main.8be212a1.chunk.js"
+    "static/css/main.669f3594.chunk.css",
+    "static/js/main.9ebcb159.chunk.js"
   ]
 }
