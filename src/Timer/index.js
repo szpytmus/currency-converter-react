@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import "./style.css";
+import React from 'react';
+import { useCurrentDate } from './useCurrentDate.js'
+import {Div} from './styled.js'
 
 const formatDate = (date) => date.toLocaleDateString("en-GB", {
     month: "long",
@@ -15,22 +16,10 @@ const formatDate = (date) => date.toLocaleDateString("en-GB", {
 
 const Timer = () => {
 
-    const [date, setDate] = useState(new Date());
-
-    useEffect(() => {
-
-        const intervalId = setInterval(() => {
-            setDate(new Date());
-        }, 1000);
-
-        return () => {
-            clearInterval(intervalId)
-        };
-
-    }, []);
+    const date = useCurrentDate();
 
     return (
-        <div className="timer">Today is: {""}{formatDate(date)}</div>
+        <Div className="timer">Today is: {""}{formatDate(date)}</Div>
     )
 };
 

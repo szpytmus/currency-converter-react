@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import "./style.css";
+import {StyledForm, Label, Select, Input, Button} from './styled.js'
 
-const Form = ({ calculateCurrency, convertedAmount }) => {
+const Form = ({ calculateCurrency }) => {
 
     const [firstCurrency, setFirstCurrency] = useState("");
     const [secondCurrency, setSecondCurrency] = useState("");
@@ -15,44 +15,43 @@ const Form = ({ calculateCurrency, convertedAmount }) => {
     }
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <p className="form__paragraph">
-                <label className="form__label">Calculate from:</label>
-                <select className="form__select" value={firstCurrency} onChange={onSelectChangeFirst}>
+        <StyledForm onSubmit={onFormSubmit}>
+            <p>
+                <Label>Calculate from:</Label>
+                <Select value={firstCurrency} onChange={onSelectChangeFirst}>
                     <option />
                     <option>PLN</option>
                     <option>GBP</option>
                     <option>EUR</option>
                     <option>USD</option>
-                </select>
+                </Select>
             </p>
-            <p className="form__paragraph">
-                <label className="form__label">Calculate to:</label>
-                <select className="form__select" value={secondCurrency} onChange={onSelectChangeSecond}>
+            <p>
+                <Label>Calculate to:</Label>
+                <Select value={secondCurrency} onChange={onSelectChangeSecond}>
                     <option />
                     <option>PLN</option>
                     <option>GBP</option>
                     <option>EUR</option>
                     <option>USD</option>
-                </select>
+                </Select>
             </p>
-            <p className="form__paragraph">
-                <label className="form__label">Select amount:</label>
-                <input
+            <p>
+                <Label>Select amount:</Label>
+                <Input
                     value={moneyAmount}
-                    className="form__input"
                     placeholder="Write amount here."
                     onChange={({ target }) => setMoneyAmount(target.value)}
+                    required
                 />
             </p>
-            <button
-                className="form__button"
+            <Button
                 onClick={() => calculateCurrency(firstCurrency, secondCurrency, moneyAmount)}
             >
                 Convert!
-            </button>
+            </Button>
             
-        </form>
+        </StyledForm>
     )
 };
 

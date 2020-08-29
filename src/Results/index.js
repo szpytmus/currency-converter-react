@@ -2,14 +2,21 @@ import React from 'react';
 import './style.css'
 
 
-const Results = ({convertedAmount}) => (
+const Results = ({convertedAmount}) => {
 
-    <div
+    if (convertedAmount !== undefined) 
+
+    {return <div
     className="results_result"
     hidden={convertedAmount <= 0}
     >
         Converted amount:  {convertedAmount}
-    </div>
-)
+    </div>}
+
+    else return ( <div>
+    
+    </div>)
+      
+}
 
 export default Results;
